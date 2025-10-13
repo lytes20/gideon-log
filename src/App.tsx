@@ -1,5 +1,12 @@
+import Cache from "./blog/cache.mdx";
+import "./styles/blog.css";
+
 function App() {
-  return <div>Welcome to my log</div>;
+  return (
+    <main>
+      <Cache />
+    </main>
+  );
 }
 
 export default App;

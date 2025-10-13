@@ -1,0 +1,46 @@
+.desc {
+  font-size: 1.13rem;
+  color: var(--text-color-gray-ting);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.section {
+  margin: 2.5rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--green-selection-ting-yeah);
+  padding: 1.25rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.definition-list {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+.definition-list li + li {
+  margin-top: 1rem;
+}
+.memory {
+  font-weight: bold;
+  color: var(--green-selection-ting-yeah);
+}
+
+.callout {
+  gap: 0.5rem;
+  background: rgba(69, 254, 156, 0.08);
+  border-left: 4px solid var(--green-selection-ting-yeah);
+  padding: 1.2rem 1rem;
+  margin: 2.5rem 0;
+  border-radius: 0.3rem;
+  color: #fff;
+}
+
+blockquote {
+  border-left: 4px solid var(--green-selection-ting-yeah);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--green-selection-ting-yeah);
+  margin: 1.4rem 0;
+  padding: 1rem 1.2rem;
+  font-style: italic;
+}
