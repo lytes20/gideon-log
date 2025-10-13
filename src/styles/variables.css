@@ -1,0 +1,9 @@
+:root {
+  --gray-ting: #2d2d2d;
+  --white-ting: #ffffff;
+  --text-color-gray-ting: #ffffff;
+  --text-color-white-ting: #2d2d2d;
+
+  /* Color from selection in iterm, will you use for something. Will also use iterm font  */
+  --green-selection-ting-yeah: #45fe9c;
+}
