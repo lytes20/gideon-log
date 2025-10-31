@@ -9,5 +9,5 @@ export default defineConfig({
       providerImportSource: "@mdx-js/react",
     }),
   ],
-  base: "/gideon-log",
+  base: "/",
 });
