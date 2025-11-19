@@ -1,0 +1,14 @@
+header {
+  width: 70%;
+  margin: 40px auto;
+}
+
+header a {
+  color: white;
+  margin: 0;
+}
+header ul {
+  display: flex;
+  gap: 12px;
+  list-style-type: none;
+}

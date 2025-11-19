@@ -1,19 +1,4 @@
 .main {
-  /* font-family: IBM Plex Sans, ui-sans-serif, system-ui, -apple-system,
-    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
-    Noto Color Emoji; */
-  display: flex;
-  flex-direction: column;
   text-align: center;
-
-  --font-mono: "JetBrains Mono", "JetBrains Mono Fallback";
-
-  font-family: var(--font-mono);
-
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
-
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  margin-top: calc(120px - 22px);
 }

@@ -1,15 +1,10 @@
-import { NavLink } from "react-router";
+import Header from "./components/Header";
+import "./styles/Home.css";
 
 function Home() {
   return (
     <div>
-      <div>
-        <ul>
-          <li>
-            <NavLink to="/blog">Blog</NavLink>
-          </li>
-        </ul>
-      </div>
+      <Header />
       <div className="main">
         <div>
           <h1>Hi, my name is Gideon Bamuleseyo</h1>
