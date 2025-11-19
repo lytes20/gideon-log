@@ -1,4 +1,5 @@
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router";
 import App from "./src/App";
 
 import "./styles.css";
@@ -9,7 +10,7 @@ if (!rootElement) {
 }
 const root = createRoot(rootElement);
 root.render(
-  <div>
+  <BrowserRouter>
     <App />
-  </div>
+  </BrowserRouter>
 );

@@ -1,11 +1,16 @@
-import Cache from "./blog/cache.mdx";
-import "./styles/blog.css";
+import { Routes, Route } from "react-router";
+
+import Home from "./Home";
+import Login from "./Login";
+import Blog from "./blog/Blog";
 
 function App() {
   return (
-    <main>
-      <Cache />
-    </main>
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="blog" element={<Blog />} />
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
 
