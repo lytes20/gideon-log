@@ -6,7 +6,7 @@ function Header() {
     <header>
       <ul>
         <li>
-          <NavLink to="/">gideonb</NavLink>
+          <NavLink to="/">gideon</NavLink>
         </li>
 
         <li>
