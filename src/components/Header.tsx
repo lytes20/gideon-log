@@ -8,7 +8,7 @@ function Header() {
         <li>
           <NavLink to="/">gideonb</NavLink>
         </li>
-        <li> /</li>
+
         <li>
           <NavLink to="/blog">blog</NavLink>
         </li>
