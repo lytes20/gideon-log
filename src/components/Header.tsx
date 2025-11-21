@@ -1,10 +1,14 @@
 import { NavLink } from "react-router";
 import "./Header.css";
 
-function Header() {
+interface HeaderProps {
+  parent?: string;
+}
+function Header(props: HeaderProps) {
+  const { parent } = props;
   return (
     <header>
-      <ul>
+      <ul className={parent == "home" ? "justify-center" : ""}>
         <li>
           <NavLink to="/">gideon</NavLink>
         </li>

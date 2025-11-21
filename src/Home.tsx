@@ -22,7 +22,7 @@ function Home() {
 
   return (
     <div>
-      <Header />
+      <Header parent="home" />
       <div className="main">
         <div>
           <h1>Hi, my name is Gideon Bamuleseyo</h1>

@@ -2,7 +2,9 @@ header {
   width: 70%;
   margin: 40px auto;
 }
-
+.justify-center {
+  justify-content: center;
+}
 header a {
   color: white;
   margin: 0;
