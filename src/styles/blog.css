@@ -1,3 +1,13 @@
+.blog-list-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.blog-list-container ul li a {
+  color: white;
+  margin: 0;
+}
+
 .blog-container {
   width: 70%;
   margin: 0 auto;

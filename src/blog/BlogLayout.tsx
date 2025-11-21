@@ -1,13 +1,13 @@
-import Cache from "./cache.mdx";
-import "../styles/blog.css";
+import { Outlet } from "react-router";
 import Header from "../components/Header";
+
 function Blog() {
   return (
     <div>
       <Header />
       <section>
         <div className="blog-container">
-          <Cache />
+          <Outlet />
         </div>
       </section>
     </div>
