@@ -15,6 +15,6 @@ export const blogs: blogProps[] = [
   {
     title: "Lessons From Anime",
     path: "/lessons-from-anime",
-    component: RemoteWork,
+    component: Training,
   },
 ];
