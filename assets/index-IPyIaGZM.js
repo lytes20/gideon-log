@@ -88,7 +88,7 @@ It boosts performance because it reduces the time it takes to fetch data - it is
 `,S.jsx(o.p,{children:"Remote work should not be seen as a convenience of work."}),`
 `,S.jsx(o.p,{children:"To maximize the quality and quantity of output, you need your core team at the same location."}),`
 `,S.jsx(o.p,{children:"However sometimes that is not favorable because of borders, politics etc. That is when remote work comes into play."})]})}function K0(c={}){const{wrapper:o}={...Ml(),...c.components};return o?S.jsx(o,{...c,children:S.jsx(dh,{...c})}):dh(c)}function hh(c){const o={em:"em",h1:"h1",h3:"h3",p:"p",strong:"strong",...Ml(),...c.components};return S.jsxs(S.Fragment,{children:[S.jsx(o.h1,{children:"Some Lessons (With some anime inspiration)"}),`
-`,S.jsx(o.p,{children:"I draw lessons, inspiration from many things - people i interact with, just observing my surroundings, movies, shows, the few books I read, etc"}),`
+`,S.jsx(o.p,{children:"I draw lessons, inspiration from many things - people i interact with, just observing my surroundings, movies, shows, the few books I read, life, etc"}),`
 `,S.jsx(o.p,{children:"Today I log about some lessons I have learned"}),`
 `,S.jsx(o.h3,{children:"How Do You Train?"}),`
 `,S.jsxs(o.p,{children:[`In athletic disciplines, training is clear and structured.
