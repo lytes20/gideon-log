@@ -131,7 +131,7 @@ Arrays alone can build countless applications.
 And once you deeply understand one data structure, the next one becomes more intuitive. Arrays lead to linked lists. Linked lists lead to trees. Trees lead to graphs etc`}),`
 `,S.jsx(o.p,{children:"Pick a skill. Focus on it. Become unreasonably good at it. Everything else will follow naturally"}),`
 `,S.jsx(o.h3,{children:"Learn by Doing"}),`
-`,S.jsx(o.p,{children:"Build a thousand kitchen knives."}),`
+`,S.jsx(o.p,{children:"Make a thousand kitchen knives."}),`
 `,S.jsx(o.p,{children:'Just today(Time of writing this), I was listening to a youtube video(Yes listening, it was playing in the background) and someone said "The world does not need another TODO app".'}),`
 `,S.jsx(o.p,{children:"I disagree."}),`
 `,S.jsx(o.p,{children:"Maybe it does not. But most of us became software engineers because of TODO apps, CRUD apps, and tiny experiments."}),`
@@ -142,7 +142,7 @@ But facts are:`}),`
 `,S.jsx(o.p,{children:"Suh, ya hear me:"}),`
 `,S.jsx(o.p,{children:"Gwan build a thousand TODO apps."}),`
 `,S.jsx(o.p,{children:"Giddem a thousand CRUD apps."}),`
-`,S.jsx(o.p,{children:"Build all those small experiments in your head."}),`
+`,S.jsx(o.p,{children:"Build all those small experiments in ya head."}),`
 `,S.jsx(o.p,{children:`Because:
 Repetition builds familiarity.
 Repetition builds intuition.
