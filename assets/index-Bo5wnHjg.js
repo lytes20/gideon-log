@@ -92,7 +92,7 @@ It boosts performance because it reduces the time it takes to fetch data - it is
 `,S.jsx(o.p,{children:"Today I log about some lessons I have learned"}),`
 `,S.jsx(o.h3,{children:"How Do You Train?"}),`
 `,S.jsxs(o.p,{children:[`In athletic disciplines, training is clear and structured.
-Take football for example - A footballer does not just `,S.jsx(o.em,{children:"show up"})," to matches—they warm up, sprint, drill with the ball, stretch, practice technique, work on strength, and then rest and recover, etc There is a rhythm and intentionality to it."]}),`
+Take football for example - A footballer does not just `,S.jsx(o.em,{children:"show up"})," to matches - they warm up, sprint, drill with the ball, stretch, practice technique, work on strength, and then rest and recover, etc There is a rhythm and intentionality to it."]}),`
 `,S.jsxs(o.p,{children:["But in many professions, especially software engineering, ",S.jsx(o.strong,{children:"training may not be as obvious"}),`.
 Like - What does "practice" look like for us? What does a training session look like?
 Is it studying?`]}),`
@@ -101,7 +101,7 @@ Training is how you stay sharp. Training is how you grow. Training is how you bu
 `,S.jsx(o.h3,{children:"I Am Your Opponent"}),`
 `,S.jsx(o.p,{children:`Life is a series of battles:
 Your health, your career progression, your relationships, your finances, your skill growth, etc.`}),`
-`,S.jsx(o.p,{children:"Each goal has its own opponent—a set of tasks, challenges, hurdles you must overcome."}),`
+`,S.jsx(o.p,{children:"Each goal has its own opponent - a set of tasks, challenges, hurdles you must overcome."}),`
 `,S.jsx(o.p,{children:"But facts:"}),`
 `,S.jsxs(o.p,{children:[S.jsx(o.strong,{children:"Your time, energy, and bandwidth are limited."}),`
 You cannot win every battle simultaneously.
@@ -111,7 +111,7 @@ Sometimes you fight everything and win nothing.`]}),`
 `,S.jsx(o.p,{children:`Identify the battle you are fighting right now. Face the correct opponent.
 Everything else is noise.`}),`
 `,S.jsx(o.h3,{children:"Iteration"}),`
-`,S.jsx(o.p,{children:"Every discipline — sports, art, engineering, business etc, grows through one thing:"}),`
+`,S.jsx(o.p,{children:"Every discipline - sports, art, engineering, business etc, grows through one thing:"}),`
 `,S.jsx(o.p,{children:S.jsx(o.strong,{children:"Iteration."})}),`
 `,S.jsx(o.p,{children:`Iteration is how you unlock growth.
 It is the compounding effect of repeated attempts, each one slightly better than the last.`}),`
