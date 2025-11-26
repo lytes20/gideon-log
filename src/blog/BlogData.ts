@@ -11,7 +11,7 @@ export const blogs: blogProps[] = [
   { title: "Caching", path: "/caching", component: Cache },
   { title: "Remote Work", path: "/remote-work", component: RemoteWork },
   {
-    title: "Lessons",
+    title: "Some Lessons (With some anime inspiration)",
     path: "/lessons",
     component: Lessons,
   },
