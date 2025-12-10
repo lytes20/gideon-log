@@ -1,6 +1,7 @@
 import Cache from "./blogs/cache.mdx";
 import RemoteWork from "./blogs/remote-work.mdx";
 import Lessons from "./blogs/lessons.mdx";
+import CreatingReactApp from "./blogs/creating-a-react-app.mdx";
 
 interface blogProps {
   title: string;
@@ -14,5 +15,10 @@ export const blogs: blogProps[] = [
     title: "Some Lessons (With some anime inspiration)",
     path: "/lessons",
     component: Lessons,
+  },
+  {
+    title: "Creating a Rect App",
+    path: "/creating-a-react-app",
+    component: CreatingReactApp,
   },
 ];

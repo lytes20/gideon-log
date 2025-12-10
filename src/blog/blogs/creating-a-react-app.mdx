@@ -1,0 +1,168 @@
+# Create a React App from Scratch 🚀
+
+Earlier this year, React officially [sunset Create React App (CRA)](https://react.dev/blog/2025/02/14/sunsetting-create-react-app), a tool that many of us relied on to quickly set up React applications. It was an easy-to-use tool that abstracted a lot of complexities, making it simple to get started with React.
+
+Today, if you check the [React Docs](https://react.dev/learn/creating-a-react-app), they strongly recommend using a framework like Next.js or Remix. But what if you don't want to use a framework? Maybe you just want to build a simple React website or have full control over your web app from the start. That's exactly what this guide is for! 🎯
+
+### What is React? 🤔
+If you're new to React, here's a quick introduction. React is the most popular JavaScript library for building web applications. It is:
+
+Easy to learn
+- Component-based (so you can reuse code efficiently)
+- Great for managing state and complex UI interactions
+- Supported by a huge developer community
+
+I have been building React applications for over six years, and I love how easy it is to build reusable web components, manage state, and integrate with other libraries. Now, let's get into the fun part—building a React app from scratch! 🎉
+
+#### Step 1: Install Node.js 🛠️
+To get started, you need Node.js installed on your computer. If you haven't installed it yet, download it from [nodejs.org](https://nodejs.org/) and follow the installation instructions.
+
+Once installed, open your terminal and verify the installation by running:
+
+```bash
+node -v
+```
+
+```bash
+npm -v 
+```
+
+This should display the versions of Node.js and npm.
+
+#### Step 2: Set Up Your Project 📂
+Navigate to the folder where you want to create your React app and run the following commands:
+
+```bash
+mkdir mauzo
+```
+
+```bash
+cd mauzo 
+```
+
+You can call your application any name you want - I just called mine mauzo 📊 (meaning sales) because we are going to build the next big application to track your sales activities 😎
+
+Now, initialize an npm project:
+
+```bash
+npm init -y 
+```
+
+This will generate a package.json file with default settings.
+
+#### Step 3: Install React 📦
+Next, install React and ReactDOM: 
+
+```bash
+npm install react react-dom 
+```
+
+- `react` - allows you to write jsx. provides the core library for creating and managing UI components. 
+- `react-dom` enables rendering react components in the DOM browser.
+
+Your folder structure should now look like this:
+
+```
+/mauzo
+  ├── node_modules/
+  ├── package.json
+  ├── package-lock.json 
+```
+
+#### Step 4: Create the Entry Files 📝
+1. **Create index.html**
+Create an index.html file and add the following code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mauzo</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="index.jsx"></script>
+  </body>
+</html> 
+```
+
+2. ***Create index.jsx**
+Now, create an index.jsx file and add this code:
+
+```jsx
+import { createRoot } from "react-dom/client";
+
+const root = createRoot(document.getElementById("root"));
+root.render(
+  <div>
+    <h1>Hello world 🌍</h1>
+    <h2>Welcome to Mauzo 🎉</h2>
+  </div>
+); 
+```
+
+#### Step 5: Set Up a Dev Server ⚡
+At this point, we have a React app, but we need a development server to run it. Since browsers don't understand JSX, we need a bundler to handle it. There a few tools we can use for this such vite, webpack, parcel etc. We'll use Vite because I have come to love this tool 😍. It's fast, has great documentation, and is easy to use. 🚀
+
+***Install Vite:***
+```bash
+npm install -D vite 
+```
+***Install the Vite plugin for React:***
+
+```bash
+npm install -D @vitejs/plugin-react 
+```
+
+***Configure Vite:***
+Create a vite.config.js file and add this code:
+
+```jsx
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+}); 
+```
+Your project should have the following structure now:
+
+```
+/mauzo
+  ├── node_modules/
+  ├── index.html
+  ├── index.jsx
+  ├── package.json
+  ├── package-lock.json
+  ├── vite.config.js
+```
+#### Step 6: Add Scripts 🏗️
+Update your package.json to include these scripts:
+
+```
+......
+"scripts": {
+  "dev": "vite",
+  "build": "vite build"
+...... 
+```
+#### Step 7: Run Your App 🎯
+Now, start your development server:
+```bash
+npm run dev 
+```
+You should see a development server running. Open the provided URL in your browser, and you should see:
+
+***Hello, world! 🌍 and Welcome to Mauzo 🎉***
+
+
+
+Congratulations! You have successfully created a React app from scratch! 🚀
+
+You can find the final code on Github [here](https://github.com/lytes20/simple-react-app-mauzo)
+
+
+
+
