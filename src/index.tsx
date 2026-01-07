@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router";
 import App from "./App";
 
 import "./styles.css";
-import "prismjs/themes/prism-tomorrow.css";
+import "prismjs/themes/prism-okaidia.css";
 
 const rootElement = document.getElementById("root");
 if (!rootElement) {
