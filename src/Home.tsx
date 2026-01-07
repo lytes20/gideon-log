@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import "./styles/Home.css";
+import "./styles/home.css";
 import Typewriter from "./components/Typewriter";
 
 const myAdjectives = ["software engineer", "builder", "problem solver"];

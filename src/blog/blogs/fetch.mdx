@@ -1,3 +1,20 @@
+# Fetching Data in React js 
+Let us say you need to fetch and display products in your project
+
+We use fetch API to make the HTTP request to the server.
+
+Endpoint we are using: [dummyjson](https://dummyjson.com/products)
+
+Mental Model here is:
+
+
+    - You make a request to the server. 
+    - Server responds.
+    - You get the response, make checks on the response. Store the response data if any a state variable.
+    - Now that you have the data in your state, you can display it in your UI.
+    - Read from the state variable.
+
+```jsx
 import { useEffect, useState } from "react";
 import Product from "./Product";
 
@@ -38,3 +55,4 @@ function ProductsList() {
 }
 
 export default ProductsList;
+```
