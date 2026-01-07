@@ -1,3 +1,8 @@
+.blog-container a:link,
+.blog-container a:visited {
+  color: #00ffff;
+}
+
 .blog-list-container {
   width: 70%;
   margin: 0 auto;
