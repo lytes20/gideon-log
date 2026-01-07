@@ -3,6 +3,14 @@
   color: #00ffff;
 }
 
+.blog-container pre[class*="language-"] {
+  font-family: "JetBrains Mono";
+  font-weight: 100;
+  font-size: 0.875rem;
+  background-color: rgb(24 24 27);
+  border: 1px solid #3f3f46;
+}
+
 .blog-list-container {
   width: 70%;
   margin: 0 auto;
