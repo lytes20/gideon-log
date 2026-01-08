@@ -2,7 +2,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router";
 import App from "./App";
 
-import "./styles.css";
+import "./styles/index.css";
 import "prismjs/themes/prism-okaidia.css";
 
 const rootElement = document.getElementById("root");
