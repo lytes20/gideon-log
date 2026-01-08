@@ -35,6 +35,15 @@ function Header({ parent }: HeaderProps) {
             blog
           </NavLink>
         </li>
+
+        <li>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            contact
+          </NavLink>
+        </li>
       </ul>
     </header>
   );

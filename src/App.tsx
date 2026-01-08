@@ -6,6 +6,7 @@ import BlogLayout from "./blog/BlogLayout";
 import ProductsList from "./components/ProductsList";
 import { blogs } from "./blog/BlogData";
 import Experience from "./pages/Experience";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Route path="/products" element={<ProductsList />} />
 
       <Route path="/" element={<Home />} />
-      <Route path="/experience" element={<Experience />} />
+      <Route path="experience" element={<Experience />} />
       <Route path="blog" element={<Blog />} />
+      <Route path="contact" element={<Contact />} />
 
       {/* Blog routes */}
       <Route element={<BlogLayout />}>
