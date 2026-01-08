@@ -1,10 +1,5 @@
 @import url(./variables.css);
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "tailwindcss";
 
 /* 100 – Thin */
 @font-face {
@@ -165,8 +160,20 @@ hr {
   margin-top: calc(var(--spacing) * 4);
   margin-bottom: calc(var(--spacing) * 4);
 }
-
+a {
+  color: #00ffff;
+}
 .container {
   width: 70%;
   margin: 0 auto;
+}
+
+.container ul {
+  padding-left: 1.625em;
+}
+.container ul li {
+  padding-left: 0.375em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  list-style: disc;
 }

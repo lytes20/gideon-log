@@ -37,7 +37,10 @@ function Timeline() {
           </p>
           <p className="text-gray-900 prose dark:text-gray-100">
             Finalist, F8 2019 Hackathon; San Jose, USA (
-            <a href="https://devpost.com/software/the-city-watch">
+            <a
+              href="https://devpost.com/software/the-city-watch"
+              target="_blank"
+            >
               DEVPOST link
             </a>
             )
@@ -50,7 +53,7 @@ function Timeline() {
       <br />
       <ExperienceItem
         time="2025 - present"
-        title="MS, Computer Science Maharishi International University, Fairfield, IA"
+        title="MS, Computer Science ßMaharishi International University, Fairfield, IA, USA"
       />
       <ExperienceItem
         time="2014 - 2019"
