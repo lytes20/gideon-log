@@ -1,3 +1,4 @@
+import EducationItem from "./EducationItem";
 import ExperienceItem from "./ExperienceItem";
 
 function Timeline() {
@@ -47,13 +48,19 @@ function Timeline() {
         Education
       </h3>
       <br />
-      <ExperienceItem
-        time="2025 - present"
-        title="MS, Computer Science Maharishi International University, Fairfield, IA, USA"
+      <EducationItem
+        time="2025 - Now"
+        longTitle={[
+          "Master of Science, Computer Science",
+          "Maharishi International University, Fairfield, IA, USA",
+        ]}
       />
-      <ExperienceItem
+      <EducationItem
         time="2014 - 2019"
-        title="BS, Computer Science Makerere University Kampala"
+        longTitle={[
+          "Bachelor of Science, Computer Science",
+          "Makerere University Kampala",
+        ]}
       />
     </>
   );
