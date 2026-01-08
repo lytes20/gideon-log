@@ -13,10 +13,6 @@ function Timeline() {
         title="Senior Software Engineer, Ramani"
       />
       <ExperienceItem
-        time="2019 - 2020"
-        title="Software Engineer, iBuild Global"
-      />
-      <ExperienceItem
         time="2018 - 2020"
         title="Community Co-Lead, Meta(Facebook) Developer Circles Kampala"
       />
