@@ -53,7 +53,7 @@ function Timeline() {
       <br />
       <ExperienceItem
         time="2025 - present"
-        title="MS, Computer Science ßMaharishi International University, Fairfield, IA, USA"
+        title="MS, Computer Science Maharishi International University, Fairfield, IA, USA"
       />
       <ExperienceItem
         time="2014 - 2019"
