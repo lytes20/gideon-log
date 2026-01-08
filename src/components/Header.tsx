@@ -14,7 +14,7 @@ function Header({ parent }: HeaderProps) {
             to="/"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            home
+            gideon
           </NavLink>
         </li>
 
