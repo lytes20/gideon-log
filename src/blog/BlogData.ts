@@ -10,13 +10,6 @@ interface blogProps {
   component: React.ComponentType;
 }
 export const blogs: blogProps[] = [
-  { title: "Caching", path: "/caching", component: Cache },
-  { title: "Remote Work", path: "/remote-work", component: RemoteWork },
-  {
-    title: "Some Lessons (With some anime inspiration)",
-    path: "/lessons",
-    component: Lessons,
-  },
   {
     title: "Fetching Data ",
     path: "/fetch-data-react",
@@ -26,5 +19,12 @@ export const blogs: blogProps[] = [
     title: "Creating a Rect App",
     path: "/creating-a-react-app",
     component: CreatingReactApp,
+  },
+  { title: "Caching", path: "/caching", component: Cache },
+  { title: "Remote Work", path: "/remote-work", component: RemoteWork },
+  {
+    title: "Some Lessons (With some anime inspiration)",
+    path: "/lessons",
+    component: Lessons,
   },
 ];
