@@ -1,18 +1,33 @@
-# Fetching Data in React js 
-Let us say you need to fetch and display products in your project
+# Fetching Data in React.js
 
-We use fetch API to make the HTTP request to the server.
+Fetching data from an API is one of the most common tasks in a React application.
+To fully understand what is happening in the code, it helps to have a basic understanding of **web requests** and **HTTP methods** (such as `GET`, `POST`, `PUT`, and `DELETE`). You can read more about them in the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods).
 
-Endpoint we are using: [dummyjson](https://dummyjson.com/products)
+In this example, I focus on performing a **GET request** to retrieve data from a server.
 
-Mental Model here is:
+I walk through a simple example where I fetch and display a list of products using the **Fetch API**, making a request to a public endpoint provided by
+👉 **[dummyjson](https://dummyjson.com/products)**
 
 
-    - You make a request to the server. 
-    - Server responds.
-    - You get the response, make checks on the response. Store the response data if any a state variable.
-    - Now that you have the data in your state, you can display it in your UI.
-    - Read from the state variable.
+---
+
+## The Mental Model
+
+Before looking at code, it helps to understand the flow:
+
+1. **Make a request** to the server
+2. **Wait for the server's response**
+3. **Validate and extract the data** from the response
+4. **Store the data in React state**
+5. **Render the UI** by reading from that state
+
+Once the data is in state, React takes care of updating the UI for us.
+
+---
+
+## The Example
+
+Below is a simple `ProductsList` component that fetches products and displays them.
 
 ```jsx
 import { useEffect, useState } from "react";
@@ -30,6 +45,7 @@ function ProductsList() {
   useEffect(() => {
     const handleFetchProducts = async () => {
       setLoading(true);
+
       await fetch("https://dummyjson.com/products")
         .then((res) => res.json())
         .then((data) => {
@@ -40,9 +56,11 @@ function ProductsList() {
 
     handleFetchProducts();
   }, []);
+
   return (
     <div>
       <h1>Products</h1>
+
       {loading ? (
         <p>Loading...</p>
       ) : (
@@ -56,3 +74,84 @@ function ProductsList() {
 
 export default ProductsList;
 ```
+
+---
+
+## What is Happening Here?
+
+### 1. State Management
+
+```js
+const [products, setProducts] = useState<ProductSummary[]>([]);
+const [loading, setLoading] = useState(false);
+```
+
+* `products` stores the fetched data
+* `loading` helps us show a loading indicator while the request is in progress
+
+---
+
+### 2. Fetching Data with `useEffect`
+
+```js
+useEffect(() => {
+  const handleFetchProducts = async () => {
+    setLoading(true);
+    ...
+  };
+
+  handleFetchProducts();
+}, []);
+```
+
+* `useEffect` runs **once** when the component mounts
+* This is the right place to perform side effects like data fetching
+* The empty dependency array (`[]`) ensures the fetch only runs once
+
+---
+
+### 3. Making the HTTP Request
+
+```js
+fetch("https://dummyjson.com/products")
+  .then((res) => res.json())
+  .then((data) => {
+    setProducts(data.products);
+    setLoading(false);
+  });
+```
+
+* `fetch` sends a GET request to the API
+* We convert the response to JSON
+* We store the products in state
+* We turn off the loading state once the data arrives
+
+---
+
+### 4. Rendering the UI
+
+```jsx
+{loading ? (
+  <p>Loading...</p>
+) : (
+  products.map((product) => (
+    <Product key={product.id} title={product.title} />
+  ))
+)}
+```
+
+* While loading, we show a simple message
+* Once data is available, we map over the products and render a `Product` component for each item
+
+---
+
+## Key Takeaways
+
+* **Data fetching happens in `useEffect`**
+* **API responses are stored in state**
+* **UI is derived from state**
+* React automatically re-renders when state changes
+
+
+This pattern—**fetch → store in state → render from state**—is the foundation of data fetching in React.
+

@@ -19,6 +19,7 @@
 .blog-list-container ul li a {
   color: white;
   margin: 0;
+  text-decoration: underline;
 }
 
 .blog-container {

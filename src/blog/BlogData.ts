@@ -19,7 +19,7 @@ export const blogs: blogProps[] = [
   },
   {
     title: "Fetching Data ",
-    path: "/fetch",
+    path: "/fetch-data-react",
     component: FetchingData,
   },
   {
