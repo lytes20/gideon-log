@@ -6,12 +6,6 @@
   width: fit-content;
 }
 
-.typewriter-container {
-  /* display: flex;
-  gap: 1px;
-  justify-content: center; */
-}
-
 .typewriter-container h2:first-child {
   margin-right: 0.25em;
 }

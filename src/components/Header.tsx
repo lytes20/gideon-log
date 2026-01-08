@@ -10,7 +10,10 @@ function Header(props: HeaderProps) {
     <header>
       <ul className={parent == "home" ? "justify-center" : ""}>
         <li>
-          <NavLink to="/">gideon</NavLink>
+          <NavLink to="/">home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/experience">experience</NavLink>
         </li>
 
         <li>
