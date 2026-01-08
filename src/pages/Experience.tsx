@@ -9,7 +9,7 @@ function Experience() {
       <div className="container">
         {/* <Skills /> */}
         <Timeline />
-      </div>{" "}
+      </div>
     </div>
   );
 }

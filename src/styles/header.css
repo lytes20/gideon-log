@@ -6,9 +6,16 @@ header {
   justify-content: center;
 }
 header a {
-  color: white;
+  /* color: white; */
+  color: var(--color-gray-400);
   margin: 0;
+  text-decoration: underline;
 }
+
+header a.active {
+  color: white;
+}
+
 header ul {
   display: flex;
   gap: 12px;

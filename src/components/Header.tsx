@@ -1,23 +1,39 @@
 import { NavLink } from "react-router";
-import "./Header.css";
+import "../styles/header.css";
 
 interface HeaderProps {
   parent?: string;
 }
-function Header(props: HeaderProps) {
-  const { parent } = props;
+
+function Header({ parent }: HeaderProps) {
   return (
     <header>
-      <ul className={parent == "home" ? "justify-center" : ""}>
+      <ul className={parent === "home" ? "justify-center" : ""}>
         <li>
-          <NavLink to="/">home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/experience">experience</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            home
+          </NavLink>
         </li>
 
         <li>
-          <NavLink to="/blog">blog</NavLink>
+          <NavLink
+            to="/experience"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            experience
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            blog
+          </NavLink>
         </li>
       </ul>
     </header>
