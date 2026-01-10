@@ -9,21 +9,19 @@ I walk through a simple example where I fetch and display a list of products usi
 👉 **[dummyjson](https://dummyjson.com/products)**
 
 
----
+<br />
 
-## The Mental Model
+# The Mental Model
 
 Before looking at code, it helps to understand the flow:
 
-1. **Make a request** to the server
-2. **Wait for the server's response**
-3. **Validate and extract the data** from the response
-4. **Store the data in React state**
-5. **Render the UI** by reading from that state
+- Make a request to the server
+-  Wait for the server's response
+- Validate and extract the data from the response
+- Store the data in React state
+- Render the UI by reading from that state
 
-Once the data is in state, React takes care of updating the UI for us.
-
----
+<br />
 
 ## The Example
 
@@ -75,7 +73,7 @@ function ProductsList() {
 export default ProductsList;
 ```
 
----
+<br/>
 
 ## What is Happening Here?
 
@@ -89,7 +87,7 @@ const [loading, setLoading] = useState(false);
 * `products` stores the fetched data
 * `loading` helps us show a loading indicator while the request is in progress
 
----
+<br/>
 
 ### 2. Fetching Data with `useEffect`
 
@@ -108,7 +106,7 @@ useEffect(() => {
 * This is the right place to perform side effects like data fetching
 * The empty dependency array (`[]`) ensures the fetch only runs once
 
----
+<br/>
 
 ### 3. Making the HTTP Request
 
@@ -126,7 +124,7 @@ fetch("https://dummyjson.com/products")
 * We store the products in state
 * We turn off the loading state once the data arrives
 
----
+<br/>
 
 ### 4. Rendering the UI
 
@@ -143,15 +141,13 @@ fetch("https://dummyjson.com/products")
 * While loading, we show a simple message
 * Once data is available, we map over the products and render a `Product` component for each item
 
----
+<br/>
 
-## Key Takeaways
+## Summary
 
 * **Data fetching happens in `useEffect`**
 * **API responses are stored in state**
 * **UI is derived from state**
 * React automatically re-renders when state changes
 
-
-This pattern—**fetch → store in state → render from state**—is the foundation of data fetching in React.
 
