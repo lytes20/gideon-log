@@ -1,0 +1,330 @@
+
+import ClientServerImage from "../../assets/images/client-server.png";
+import URL from "../../assets/images/url.png";
+
+# How the Web Works
+
+At its core, the web works through **web services**.
+
+A **web service** is a service offered by one electronic device to another over the internet. In simple terms, it is **one machine communicating with another machine** using agreed-upon rules (protocols).
+
+Web services rely on open standards and internet protocols such as **HTTP**, **FTP**, and others. In this article, I focus primarily on **HTTP-based REST APIs**, which power most modern web applications.
+
+<br/>
+
+# Examples of Web Services
+
+Some common examples of web services include:
+
+- AJAX requests from a browser
+- REST APIs
+- Third-party APIs (payment gateways, maps, authentication services)
+
+In this article, I focus on **HTTP REST APIs**.
+
+<br/>
+
+# REST APIs
+
+**REST** stands for **Representational State Transfer**.
+
+REST is not a technology—it is an **architectural style** used when designing web services. When APIs follow REST principles, we commonly refer to them as **REST APIs**.
+<br />
+
+# What is an API?
+
+**API** stands for **Application Programming Interface**.
+
+An API is a way for different software systems (machines) to communicate with each other. It defines:
+- What requests can be made
+- How those requests should look
+- What responses will be returned
+
+<br/>
+
+## Client-Server Architecture
+
+<img src={ClientServerImage} alt="client-server" caption="Client-Server architecture" />
+<br />
+
+Most web applications follow a **client-server architecture**.
+<br />
+# Clients
+
+A **client** is a machine or application that **requests resources**.
+
+In practice, clients include:
+- Mobile phones
+- Web browsers
+- Desktop applications
+- Smart TVs
+
+For example, when you log into Instagram on your phone, the **Instagram app** acts as the client. It sends a request to Instagram's servers asking to authenticate you. When you are authenticated successfully, the app makes another request to get your feed.
+
+<br/>
+
+# Servers
+
+A **server** is another machine that **stores resources** and exposes APIs that clients can interact with.
+
+Servers are responsible for:
+- Receiving requests
+- Processing them
+- Sending back responses
+
+In this article, I focus on **REST APIs that live on servers**.
+
+<br/>
+
+## REST API Design Principles
+
+REST APIs follow several key design principles:
+
+- **Client-Server architecture**  
+  The client and server are separate concerns.
+
+- **Statelessness**  
+  The server does not store client state between requests.
+
+- **Cacheability**  
+  Responses can be cached by clients to improve performance.
+
+- **Layered system**  
+  Intermediaries (proxies, gateways) can exist between client and server.
+
+- **Code on Demand (optional)**  
+  Servers can extend client functionality by sending executable code.
+
+- **Uniform Interface**  
+  Resources are identified consistently using URLs.
+
+<br />
+
+## REST APIs and HTTP
+
+**HTTP (HyperText Transfer Protocol)** is the protocol used to transfer data on the web.
+
+It is designed for communication between:
+- Web browsers (clients)
+- Web servers
+
+In HTTP:
+1. A client sends a request
+2. The server processes it
+3. The server sends back a response
+
+<br />
+
+## HTTP Requests
+
+An **HTTP request** is a request for a resource.
+
+A resource can be:
+- Text
+- JSON data
+- Images
+- Files
+- HTML pages
+
+REST APIs use **URLs (Uniform Resource Locators)** to identify resources.
+
+A URL is a type of **URI (Uniform Resource Identifier)** that specifies where a resource is located on the internet.
+
+<br />
+
+## Anatomy of a URL
+
+<img src={URL} alt="url" caption="Anatomy of a URL" />
+<br />
+
+A URL is composed of several parts, some mandatory and some optional:
+
+- Protocol (e.g. `http`, `https`)
+- Domain name
+- Port
+- Path
+
+<br />
+
+## Components of an HTTP Request
+
+An HTTP request typically contains:
+
+- **URL**
+- **Headers**
+- **HTTP Method (Verb)**
+- **Body** (optional)
+
+<br />
+
+## HTTP Request Methods
+
+HTTP methods define the **action** being performed on a resource.
+
+Some common HTTP methods include:
+
+| Method | Action |
+|------|--------|
+| GET | Request a resource |
+| POST | Create a new resource |
+| PUT | Update or replace a resource |
+| DELETE | Delete a resource |
+
+You can learn more about HTTP methods [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
+
+<br />
+
+## HTTP Responses
+
+An **HTTP response** is the server's answer to a client's request.
+
+Each API endpoint defines what response it returns when it is hit.
+
+<br />
+
+## Components of an HTTP Response
+
+An HTTP response contains:
+
+- **Status code**
+- **Headers**
+- **Body**
+
+<br />
+
+## HTTP Response Status Codes
+
+Status codes indicate whether a request was successful or not.
+
+They are grouped into five classes:
+
+- **Informational** (100-199)
+- **Successful** (200-299)
+- **Redirection** (300-399)
+- **Client Error** (400-499)
+- **Server Error** (500-599)
+
+Some common status codes:
+
+| Status Code | Meaning |
+|------------|---------|
+| 200 | Request successful |
+| 201 | Resource successfully created |
+| 400 | Bad request |
+| 401 | Unauthorized |
+| 404 | Resource not found |
+| 500 | Internal server error |
+
+You can explore more status codes [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+
+<br />
+
+## HTTP Headers
+
+**Headers** carry additional metadata about a request or response.
+
+They are usually key-value pairs, such as:
+- Content type
+- Authentication tokens
+- Caching instructions
+
+<br />
+
+## Building a Server
+
+Servers can be built using many programming languages, including:
+- JavaScript / TypeScript
+- Java
+- Python
+- Go
+
+Let's build a simple server using **Node.js**.
+
+### Setup
+
+1. Install Node.js
+2. Create a new project folder:
+
+```bash
+mkdir server
+cd server
+```
+
+3. Create a server file:
+
+```bash
+touch server.js
+```
+
+<br />
+
+### Simple Node.js Server
+
+```js
+// server.js
+const { createServer } = require("node:http");
+
+const server = createServer((req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("Hello World!\n");
+});
+
+server.listen(3000, "127.0.0.1", () => {
+  console.log("Listening on http://127.0.0.1:3000/");
+});
+```
+
+Run the server:
+
+```bash
+node server.js
+```
+
+<br />
+
+## Building a Client
+<br />
+
+Clients can be: Web browsers, Mobile apps, Desktop applications
+
+For browsers, client applications are built using **HTML, CSS, and JavaScript**.
+
+Create an `index.html` file to fetch data from the server:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client</title>
+  </head>
+  <body>
+    <div id="message"></div>
+
+    <script>
+      fetch("http://127.0.0.1:3000/")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("message").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
+```
+
+When you open this file in a browser, the client sends an HTTP request to the server and displays the response.
+
+<br />
+
+## Summary
+
+* The web works through **client-server communication**
+* REST APIs expose resources over **HTTP**
+* Clients make requests, servers send responses
+* URLs identify resources
+* HTTP methods define actions
+* Status codes communicate success or failure
+
+This foundation is essential for understanding modern web development.

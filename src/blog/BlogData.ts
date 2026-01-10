@@ -3,6 +3,7 @@ import RemoteWork from "./blogs/remote-work.mdx";
 import Lessons from "./blogs/lessons.mdx";
 import CreatingReactApp from "./blogs/creating-a-react-app.mdx";
 import FetchingData from "./blogs/fetch.mdx";
+import Web from "./blogs/web.mdx";
 
 interface blogProps {
   title: string;
@@ -11,7 +12,7 @@ interface blogProps {
 }
 export const blogs: blogProps[] = [
   {
-    title: "Fetching Data ",
+    title: "Fetching Data",
     path: "/fetch-data-react",
     component: FetchingData,
   },
@@ -19,6 +20,11 @@ export const blogs: blogProps[] = [
     title: "Creating a Rect App",
     path: "/creating-a-react-app",
     component: CreatingReactApp,
+  },
+  {
+    title: "How the web works",
+    path: "/web",
+    component: Web,
   },
   { title: "Caching", path: "/caching", component: Cache },
   { title: "Remote Work", path: "/remote-work", component: RemoteWork },
