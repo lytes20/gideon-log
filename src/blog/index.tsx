@@ -8,7 +8,9 @@ function Blog() {
     <div>
       <Header />
       <section>
+
         <div className="blog-list-container">
+          <h1>List of Blogs I have written - Enjoy</h1>
           <ul>
             {blogs.map(({ title, path }) => {
               return (
