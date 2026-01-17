@@ -17,12 +17,12 @@ export const blogs: blogProps[] = [
     component: Web,
   },
   {
-    title: "Fetching Data",
+    title: "Fetching Data in React",
     path: "/fetch-data-react",
     component: FetchingData,
   },
   {
-    title: "Creating a Rect App",
+    title: "Creating a React App",
     path: "/creating-a-react-app",
     component: CreatingReactApp,
   },
