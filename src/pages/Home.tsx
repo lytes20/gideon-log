@@ -19,6 +19,18 @@ function Home() {
         </div>
         <div>Javascript | Typescript | Java | Python</div>
       </div>
+      <div className="mx-auto w-[80%] text-center mt-16">
+        <h1 className="text-lg">
+          I am building my own operating system{" "}
+          <a
+            className="underline cursor-ne-resize"
+            href="https://os.gideonb.dev/"
+            target="_blank"
+          >
+            here
+          </a>
+        </h1>
+      </div>
     </div>
   );
 }
