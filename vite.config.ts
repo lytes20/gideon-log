@@ -15,5 +15,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "gideon-log/",
+  base: "/gideon-log/",
 });
