@@ -17,7 +17,7 @@ function Home() {
             ))}
           </div>
         </div>
-        <div className="p-2">
+        <div className="p-4">
           <div>
             <h1>Hi, my name is Gideon Bamuleseyo</h1>
             <div className="typewriter-container">
