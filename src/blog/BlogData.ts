@@ -3,6 +3,7 @@ import Lessons from "./blogs/lessons.mdx";
 import CreatingReactApp from "./blogs/creating-a-react-app.mdx";
 import FetchingData from "./blogs/fetch.mdx";
 import Web from "./blogs/web.mdx";
+import Markdown from "./blogs/markdown.mdx";
 
 interface blogProps {
   title: string;
@@ -10,6 +11,11 @@ interface blogProps {
   component: React.ComponentType;
 }
 export const blogs: blogProps[] = [
+  {
+    title: "Markdown",
+    path: "/markdown",
+    component: Markdown,
+  },
   {
     title: "How the web works",
     path: "/web",
