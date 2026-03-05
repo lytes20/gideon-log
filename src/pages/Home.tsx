@@ -35,7 +35,7 @@ function Home() {
           I am building my own operating system{" "}
           <a
             className="underline cursor-ne-resize"
-            href="https://os.gideonb.dev/"
+            href="https://lytes20.github.io/giddyOS/"
             target="_blank"
           >
             here
