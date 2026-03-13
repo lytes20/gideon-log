@@ -1,14 +1,14 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route } from 'react-router';
 
-import Home from "./pages/Home";
-import Blog from "./blog";
-import BlogLayout from "./blog/BlogLayout";
-import ProductsList from "./components/ProductsList";
-import { blogs } from "./blog/BlogData";
-import Experience from "./pages/Experience";
-import Contact from "./pages/Contact";
-import MarkDown from "./Apps/MarkDown";
-import ImageGenerator from "./Apps/ImageGenerator";
+import Home from './pages/Home';
+import Blog from './blog';
+import BlogLayout from './blog/BlogLayout';
+import ProductsList from './components/ProductsList';
+import { blogs } from './blog/BlogData';
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
+import MarkDown from './Apps/MarkDown';
+import ImageGenerator from './Apps/ImageGenerator';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Route path="experience" element={<Experience />} />
       <Route path="blog" element={<Blog />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="try-markdown" element={<MarkDown />} />
+      <Route path="markdown/app" element={<MarkDown />} />
       <Route path="image-generator" element={<ImageGenerator />} />
 
       {/* Blog routes */}
