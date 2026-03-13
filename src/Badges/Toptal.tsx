@@ -20,7 +20,12 @@ function TopTal() {
             </g>
           </svg>
 
-          <a className="f" href="https://www.toptal.com/developers/resume/gideon-bamuleseyo#gz9z0x" rel="noopener noreferrer">
+          <a
+            className="f"
+            href="https://www.toptal.com/developers/resume/gideon-bamuleseyo#gz9z0x"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Hire me
           </a>
         </div>
