@@ -1,18 +1,23 @@
-import Header from "../components/Header";
-import "../styles/home.css";
-import Typewriter from "../components/Typewriter";
-import WindowButton from "../components/WindowButton";
+import Header from '../components/Header';
+import '../styles/home.css';
+import Typewriter from '../components/Typewriter';
+import WindowButton from '../components/WindowButton';
+import TopTal from '../Badges/Toptal';
 
-const MY_ADJECTIVES = ["software engineer", "builder", "problem solver"];
+const MY_ADJECTIVES = ['software engineer', 'builder', 'problem solver'];
 
 function Home() {
   return (
     <div>
       <Header parent="home" />
+      <div className="flex justify-center">
+        <TopTal />
+      </div>
+
       <div className="main border border-gray-500 rounded-md">
         <div className="border-b border-gray-500">
           <div className="flex gap-1 p-1">
-            {["", "", ""].map((btn, index) => (
+            {['', '', ''].map((btn, index) => (
               <WindowButton key={index} />
             ))}
           </div>
@@ -32,12 +37,8 @@ function Home() {
       </div>
       <div className="mx-auto w-[80%] text-center mt-16">
         <h1 className="text-lg">
-          I am building my own operating system{" "}
-          <a
-            className="underline cursor-ne-resize"
-            href="https://lytes20.github.io/giddyOS/"
-            target="_blank"
-          >
+          I am building my own operating system{' '}
+          <a className="underline cursor-ne-resize" href="https://lytes20.github.io/giddyOS/" target="_blank">
             here
           </a>
         </h1>
