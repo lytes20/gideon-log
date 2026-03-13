@@ -1,9 +1,11 @@
 import { NavLink } from "react-router";
+import { MARKDOWN_APP_URL } from "../../constants";
 
 # What is Markdown?
 
 To understand what Markdown is, we first need to talk about one of the main problems it solves: **documentation**.
 
+<br />
 ## What is Documentation?
 
 Documentation is a way of passing knowledge from one source to another.
@@ -12,6 +14,7 @@ As humans, we accumulate knowledge through experiences, experiments, and observa
 
 That is why documentation is extremely important. It allows knowledge to survive beyond individuals and to be shared across generations.
 
+<br />
 ## Ways to Document Knowledge
 
 There are many ways you can document something:
@@ -50,7 +53,23 @@ With Markdown, you can easily create:
 All of this is done using very simple and readable syntax.
 
 For example, a Markdown file is still easy to read even without being rendered. This makes it extremely convenient for writing documentation.
+<br />
+## A quick taste of the syntax
 
+
+```md
+# Shopping List
+
+Things I need to shop.
+
+- Bananas
+- Eggs
+- Milk
+
+You can also add **bold**, *italic*, and `inline code`.
+```
+
+<br />
 ## Why Markdown Became Popular
 
 Markdown has become incredibly popular for several reasons:
@@ -61,7 +80,7 @@ Markdown has become incredibly popular for several reasons:
 - It works very well with **version control systems like Git**
 
 Many developers use Markdown to write documentation files such as `README.md` in their repositories.
-
+<br />
 ## Markdown and AI
 
 Markdown has become even more important in the age of AI.
@@ -72,6 +91,7 @@ In many cases, agent capabilities are simply **best practices documented in Mark
 
 This makes Markdown an incredibly useful skill to learn today.
 
+<br />
 ## Markdown + React = MDX
 
 This very blog post you are reading was written using **MDX**.
@@ -80,16 +100,17 @@ MDX is a powerful format that combines **Markdown and JSX**, allowing you to wri
 
 For example, I can embed links like this:
 
-You can practice writing Markdown in my demo app <NavLink to="/markdown/app">here</NavLink>.
+You can practice writing Markdown in my demo app <NavLink to={MARKDOWN_APP_URL} target="_blank" rel="noreferrer">here</NavLink>.
 
+<br />
 ## Markdown Files
 
 Markdown files are identified by the `.md` file extension.
 
 For example:
-- README.md
-- guide.md
-- documentation.md
+- `README.md` - project overview
+- `guide.md` - walkthroughs and tutorials
+- `documentation.md` - deeper technical docs
 
 Developers have been using Markdown for years to write documentation, tutorials, and technical guides.
 
@@ -99,3 +120,5 @@ Once you learn Markdown, you'll find it incredibly useful for writing:
 - blog posts
 - project guides
 - knowledge bases
+
+Explore more about markdown in my markdown app  <NavLink to={MARKDOWN_APP_URL} target="_blank" rel="noreferrer">Markdown App</NavLink>.

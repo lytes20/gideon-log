@@ -1,0 +1,144 @@
+import { NavLink } from "react-router";
+
+# Markdown: the language behind most docs you read
+
+If you write code, publish notes, or ship products, you already live in a world shaped by **Markdown**. Most `README`s, issue templates, changelogs, and even a lot of blog posts are just plain text with a thin layer of structure on top.
+
+Markdown is that structure.
+
+---
+
+## Why bother with documentation at all?
+
+Documentation is just **knowledge that outlives a conversation**.
+
+We learn things through experiments, bugs, late-night debugging, and hard-won experience. If that knowledge only lives in your head or in a Slack thread, it disappears as soon as people move on.
+
+Good documentation:
+
+- **Reduces repeat questions** - less "how does this work again?"
+- **Keeps projects sane** - decisions, trade-offs, and gotchas are written down
+- **Helps future you** - you will forget what you did six months from now
+
+Text is still the most compact, searchable, and flexible way to do this. That's where Markdown comes in.
+
+---
+
+## What exactly is Markdown?
+
+Markdown is a **lightweight markup language** for writing structured documents in plain text.
+
+You can write things like:
+
+- **Headings**
+- **Paragraphs**
+- **Lists** (ordered and unordered)
+- **Links and images**
+- **Code blocks**
+- **Tables**
+
+…using a tiny set of characters you already know: `#`, `*`, `-`, `` ` ``, and so on.
+
+The key idea: **a Markdown file is readable even before it's rendered**. You don't need a special editor or viewer to understand it.
+
+---
+
+## A quick taste of the syntax
+
+A small example says more than a definition:
+
+```md
+# Project Title
+
+This is a short description of the project.
+
+- Easy to read
+- Easy to write
+- Works everywhere
+
+You can also add **bold**, *italic*, and `inline code`.
+```
+
+Rendered, that turns into a clean heading, paragraph, and bullet list. No HTML tags, no angle brackets, no noise.
+
+---
+
+## Why developers like Markdown
+
+Markdown took off in developer communities because it fits how we work:
+
+- **Plain text** - works in any editor, diffable in Git
+- **Version-control friendly** - you can review documentation like you review code
+- **Portable** - you can convert it into HTML, PDFs, slide decks, or static sites
+- **Low friction** - the syntax is small enough to remember after one sitting
+
+That's why almost every serious repo has files like:
+
+- `README.md`
+- `CONTRIBUTING.md`
+- `CHANGELOG.md`
+
+Once you're comfortable with Markdown, writing these stops feeling like a chore.
+
+---
+
+## Markdown in the age of AI
+
+AI tools also lean heavily on Markdown.
+
+- Many agents read Markdown instructions directly.
+- Skills, prompts, and guidelines are often stored as `.md` files.
+- Mixed content (text, code blocks, lists) is easy for models to parse.
+
+In other words, **good Markdown is a power-up for both humans and AI**. Clear structure helps people read and helps models behave.
+
+---
+
+## Markdown + React = MDX
+
+This blog post is written in **MDX**.
+
+MDX combines **Markdown and JSX**, so you can:
+
+- Write normal Markdown
+- Drop in **React components** when you need something interactive
+
+For example, I can embed a live link to a React app right inside this text:
+
+You can practice writing Markdown in my demo app <NavLink to="https://markdown-app-dba21.web.app/" target="_blank" rel="noreferrer">here</NavLink>.
+
+This is the same document format the React ecosystem uses for interactive docs, design systems, and component playgrounds.
+
+---
+
+## File extensions and where you'll see Markdown
+
+Markdown usually lives in files ending in:
+
+- `.md`
+- `.mdx` (Markdown + JSX)
+
+Common examples:
+
+- `README.md` - project overview
+- `guide.md` - walkthroughs and tutorials
+- `documentation.md` - deeper technical docs
+
+You'll also see Markdown inside:
+
+- issue and PR templates
+- blog engines
+- note-taking tools
+- knowledge bases and internal wikis
+
+---
+
+## Where to go from here
+
+If you're new to Markdown, the fastest way to learn is:
+
+- **Pick one small thing** - rewrite a `README`, a spec, or a note in Markdown.
+- **Use it daily** - notes, design docs, bug reports.
+- **Let the syntax get out of the way** - focus on clarity; the formatting will follow.
+
+Once it clicks, Markdown becomes the default way you write anything that needs to be shared, versioned, or kept around for future you.

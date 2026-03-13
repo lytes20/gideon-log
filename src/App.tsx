@@ -7,7 +7,6 @@ import ProductsList from './components/ProductsList';
 import { blogs } from './blog/BlogData';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
-import MarkDown from './Apps/MarkDown';
 import ImageGenerator from './Apps/ImageGenerator';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
       <Route path="experience" element={<Experience />} />
       <Route path="blog" element={<Blog />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="markdown/app" element={<MarkDown />} />
       <Route path="image-generator" element={<ImageGenerator />} />
 
       {/* Blog routes */}
