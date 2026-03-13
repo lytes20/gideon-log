@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from '../components/Header';
 
 function Contact() {
   return (
@@ -10,28 +10,19 @@ function Contact() {
             <h2>Links</h2>
             <ul>
               <li>
-                Email:{" "}
-                <a href="mailto:gideonbamuleseyo@gmail.com">
-                  gideonbamuleseyo@gmail.com
-                </a>
+                Email: <a href="mailto:gideonbamuleseyo@gmail.com">gideonbamuleseyo@gmail.com</a>
               </li>
               <li>
                 GitHub: <a href="https://github.com/lytes20">@lytes20</a>
               </li>
               <li>
-                LinkedIn:{" "}
-                <a href="https://www.linkedin.com/in/gideon-bamuleseyo-07b574119/">
-                  Gideon Bamuleseyo
-                </a>
+                LinkedIn: <a href="https://www.linkedin.com/in/gideon-bamuleseyo-07b574119/">Gideon Bamuleseyo</a>
               </li>
               <li>
-                Website: <a href="https://gideonb.dev/">gideonb.dev</a>
+                Website: <a href="https://gidemvb.dev/">gidemvb.dev</a>
               </li>
               <li>
-                Stackoverflow:{" "}
-                <a href="https://stackoverflow.com/users/6653241/gideon-bamuleseyo/">
-                  Gideon Bamuleseyo
-                </a>
+                Stackoverflow: <a href="https://stackoverflow.com/users/6653241/gideon-bamuleseyo/">Gideon Bamuleseyo</a>
               </li>
             </ul>
           </div>
