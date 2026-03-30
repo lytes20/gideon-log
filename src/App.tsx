@@ -8,6 +8,8 @@ import { blogs } from './blog/BlogData';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 import ImageGenerator from './Apps/ImageGenerator';
+import MarkdownPost from './Apps/ImageGenerator/MarkdownPost';
+import NextJSAdapter from './Apps/ImageGenerator/NextJSAdapter';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path="blog" element={<Blog />} />
       <Route path="contact" element={<Contact />} />
       <Route path="image-generator" element={<ImageGenerator />} />
+      <Route path="image-generator/markdown-post" element={<MarkdownPost />} />
+      <Route path="image-generator/nextjs-adapter" element={<NextJSAdapter />} />
 
       {/* Blog routes */}
       <Route element={<BlogLayout />}>
