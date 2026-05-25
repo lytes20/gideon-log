@@ -7,6 +7,7 @@ import ProductsList from './components/ProductsList';
 import { blogs } from './blog/BlogData';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
+import Apps from './pages/Apps';
 import ImageGenerator from './Apps/ImageGenerator';
 import MarkdownPost from './Apps/ImageGenerator/MarkdownPost';
 import NextJSAdapter from './Apps/ImageGenerator/NextJSAdapter';
@@ -20,6 +21,7 @@ function App() {
       <Route path="experience" element={<Experience />} />
       <Route path="blog" element={<Blog />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="apps" element={<Apps />} />
       <Route path="image-generator" element={<ImageGenerator />} />
       <Route path="image-generator/markdown-post" element={<MarkdownPost />} />
       <Route path="image-generator/nextjs-adapter" element={<NextJSAdapter />} />
