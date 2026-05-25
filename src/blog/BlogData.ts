@@ -4,7 +4,6 @@ import CreatingReactApp from './blogs/creating-a-react-app.mdx';
 import FetchingData from './blogs/fetch.mdx';
 import Web from './blogs/web.mdx';
 import Markdown from './blogs/markdown.mdx';
-import NextJSAdapter from './blogs/nextjs-adapter.mdx';
 
 interface blogProps {
   title: string;
@@ -13,11 +12,6 @@ interface blogProps {
 }
 
 export const blogs: blogProps[] = [
-  {
-    title: 'Next JS Adapter',
-    path: '/next-js-adapter',
-    component: NextJSAdapter,
-  },
   {
     title: 'Markdown',
     path: '/markdown',
