@@ -4,7 +4,7 @@ import Typewriter from '../components/Typewriter';
 import WindowButton from '../components/WindowButton';
 import TopTal from '../Badges/Toptal';
 
-const MY_ADJECTIVES = ['software engineer', 'builder', 'problem solver'];
+const MY_ADJECTIVES = ['software engineer', 'designer', 'builder', 'problem solver'];
 
 function Home() {
   return (
